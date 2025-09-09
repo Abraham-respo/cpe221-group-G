@@ -1,0 +1,70 @@
+# Laptop Price Prediction Project
+
+This project aims to predict laptop prices using machine learning techniques. The workflow includes data cleaning, exploratory data analysis (EDA), model training, and deployment using Streamlit.
+
+## Project Structure
+
+```
+README
+
+dataset/
+    laptop_price.csv                # Raw dataset
+    cleaned/
+        laptops_cleaned.csv         # Cleaned dataset
+
+models/
+    laptop_price_model.pkl          # Trained ML model
+
+notebook/
+    data_cleaning_EDA_model_traninig.ipynb  # Data cleaning, EDA, and model training notebook
+    model_training.ipynb                    # Model training notebook
+
+streamlit/
+    app.py                          # Streamlit web application
+```
+
+## Steps Performed
+
+### 1. Data Cleaning & EDA
+- Loaded raw data from `dataset/laptop_price.csv`.
+- Performed data cleaning and preprocessing in `notebook/data_cleaning_EDA_model_traninig.ipynb`.
+- Saved the cleaned data to `dataset/cleaned/laptops_cleaned.csv`.
+- Conducted exploratory data analysis to understand key features affecting laptop prices.
+
+### 2. Model Training
+- Trained machine learning models to predict laptop prices using the cleaned dataset.
+- Model training and evaluation performed in `notebook/model_training.ipynb`.
+- Saved the best performing model as `models/laptop_price_model.pkl`.
+
+### 3. Deployment
+- Built a Streamlit web application in `streamlit/app.py` to allow users to input laptop features and get price predictions.
+- The app loads the trained model and provides an interactive interface for predictions.
+
+## How to Run
+
+1. **Install Dependencies**
+   - Ensure you have Python installed.
+   - Install required packages (e.g., pandas, scikit-learn, streamlit):
+     ```powershell
+     pip install pandas scikit-learn streamlit
+     ```
+
+2. **Run the Streamlit App**
+   - Navigate to the `streamlit` directory and run:
+     ```powershell
+     streamlit run app.py
+     ```
+
+## Files Overview
+- **dataset/laptop_price.csv**: Original dataset.
+- **dataset/cleaned/laptops_cleaned.csv**: Cleaned dataset after preprocessing.
+- **models/laptop_price_model.pkl**: Trained machine learning model.
+- **notebook/data_cleaning_EDA_model_traninig.ipynb**: Data cleaning and EDA notebook.
+- **notebook/model_training.ipynb**: Model training notebook.
+- **streamlit/app.py**: Streamlit web application for predictions.
+
+## Author
+- Group G
+
+---
+Feel free to modify or extend this README as your project evolves.
